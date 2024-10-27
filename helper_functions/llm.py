@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
-load_dotenv('.env')
+load_dotenv('helper_functions\.env')
 openai_api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=openai_api_key)
 llm_model = "gpt-4o"
@@ -13,7 +13,7 @@ def get_completion(prompt, model=llm_model):
     response = client.chat.completions.create(
         model=model,
         messages=messages,
-        temperature=0,
+        temperature=temp,
     )
     return response.choices[0].message.content
 

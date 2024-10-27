@@ -2,12 +2,12 @@ import os
 import streamlit as st
 import random
 import time
-import global_ as glob
+#import global_ as glob
 from dotenv import load_dotenv
 from openai import OpenAI
 from helper_functions import llm
 
-load_dotenv('.env')
+load_dotenv('helper_functions\.env')
 openai_api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=openai_api_key)
 llm_model = "gpt-4o"
@@ -164,7 +164,7 @@ def get_guide():
 
     return next_response
 
-## -- Generate and empty lists --
+## -- Generate an empty list --
 def ListResp():
     list_of_Resp = []
     return list_of_Resp

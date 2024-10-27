@@ -1,7 +1,7 @@
 import streamlit as st
 import sys
 import os
-from global_ import *
+#from global_ import *
 from helper_functions import llm, session
 from DFR_resource import approaches_dict as app_dict
 
