@@ -3,7 +3,7 @@ import sys
 import os
 from global_ import *
 from helper_functions import llm, session
-from DFR import approaches_dict as app_dict
+from DFR_resource import approaches_dict as app_dict
 
 ## -- Setting up the Headers --
 st.title("Case Study Discussion Facilitator")

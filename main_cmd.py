@@ -1,5 +1,5 @@
 from helper_functions import llm
-from DFR import discussion as dis
+from DFR_resource import discussion as dis
 print("Hello!")
 print("Welcome to Discussion Facilitator!")
 num_of_students = dis.StudentCounter()
